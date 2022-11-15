@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C43C8CF0-683A-4691-B9C0-93F53B8A5303}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Crypto_System_V1._0</RootNamespace>
+    <AssemblyName>Crypto System V1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form0.Designer.cs">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1Shift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1Shift.Designer.cs">
+      <DependentUpon>Form_1Shift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2Subsbitution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2Subsbitution.Designer.cs">
+      <DependentUpon>Form_2Subsbitution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_5Affine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_5Affine.Designer.cs">
+      <DependentUpon>Form_5Affine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_6Permutation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_6Permutation.Designer.cs">
+      <DependentUpon>Form_6Permutation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_3Vigener.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_3Vigener.Designer.cs">
+      <DependentUpon>Form_3Vigener.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_4Autokey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_4Autokey.Designer.cs">
+      <DependentUpon>Form_4Autokey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form0.resx">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_5Affine.resx">
+      <DependentUpon>Form_5Affine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_6Permutation.resx">
+      <DependentUpon>Form_6Permutation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1Shift.resx">
+      <DependentUpon>Form_1Shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2Subsbitution.resx">
+      <DependentUpon>Form_2Subsbitution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_3Vigener.resx">
+      <DependentUpon>Form_3Vigener.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_4Autokey.resx">
+      <DependentUpon>Form_4Autokey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-secure-encryption-269x429 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
